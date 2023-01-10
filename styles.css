@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+header{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 1.8rem
+}
+#createBtn{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    color:black;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+}#createBtn:hover{
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+form{
+    display: none;
+}
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.card , .formContainer{
+    background-color: rgb(255, 255, 255);
+    width: max(25vw, 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+}.card h2 , label{
+    margin-top: 10px ;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}.card p , #rmvBtn , #submit , .formContainer>input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: none;
+}
+#rmvBtn , #submit{
+    margin-top: 20px;
+    border-radius: 0;
+}#submit{
+    background-color: rgb(0,255,0);
+}#submit:hover{
+    background-color: black;
+    color: rgb(0,255,0);
+}#rmvBtn{
+    background-color: red;
+}#rmvBtn:hover{
+    background-color: black;
+    color: red;
+}
+.radioContainer > label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}.radioContainer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}.radioContainer > label:last-of-type{
+    margin-left: 50px;
+}
+.formContainer > input{
+    background-color: rgb(230, 230, 230);
+}.formContainer > input:focus{
+    outline: 1px solid black;
+}
+
+.readBtn{
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 100px;
+    text-align: center;
+}.readBtn:hover{
+    background-color: rgba(200, 0, 0, 0.5);
+}
+.bookRead{
+    background-color: rgba(0, 255, 0, 0.5);
+}.bookRead:hover{
+    background-color: rgba(0, 200, 0, 0.5);
+}
